@@ -3,7 +3,7 @@
 #MCU = atmega8
 #MCU = atmega88
 #MCU = atmega168
-MCU = atmega328p
+#MCU = atmega328p
 #MCU = atmega16
 #MCU = atmega32
 #MCU = atmega644
@@ -12,11 +12,11 @@ MCU = atmega328p
 #F_CPU =  4000000
 #F_CPU =  7372800
 #F_CPU =  8000000
-F_CPU = 14745600
+#F_CPU = 14745600
 #F_CPU = 16000000
 
 # Bootloader address:
-BOOTLOADER_BOARD_ID = 0xff
+#BOOTLOADER_BOARD_ID = 0xff
 
 # Startaddress of the bootloader (512 words)
 #     ATMega8/88    => 0x1C00
@@ -98,15 +98,15 @@ CSTANDARD = -std=gnu99
 
 # Place -D or -U options here for C sources
 CDEFS  = -DF_CPU=$(F_CPU)UL
-CDEFS += -DBOOTLOADER_BOARD_ID=$(BOOTLOADER_BOARD_ID)
+#CDEFS += -DBOOTLOADER_BOARD_ID=$(BOOTLOADER_BOARD_ID)
 
 # Place -D or -U options here for ASM sources
 ADEFS  = -DF_CPU=$(F_CPU)
-ADEFS += -DBOOTLOADER_BOARD_ID=$(BOOTLOADER_BOARD_ID)
+#ADEFS += -DBOOTLOADER_BOARD_ID=$(BOOTLOADER_BOARD_ID)
 
 # Place -D or -U options here for C++ sources
 CPPDEFS  = -DF_CPU=$(F_CPU)UL
-CPPDEFS += -DBOOTLOADER_BOARD_ID=$(BOOTLOADER_BOARD_ID)
+#CPPDEFS += -DBOOTLOADER_BOARD_ID=$(BOOTLOADER_BOARD_ID)
 #CPPDEFS += -D__STDC_LIMIT_MACROS
 #CPPDEFS += -D__STDC_CONSTANT_MACROS
 
